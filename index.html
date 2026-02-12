@@ -29,20 +29,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Portfolio</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -58,12 +44,35 @@
     </hero>
     <about-preview class="container text-center my-5">
         <h2>About Me</h2>
-        <p class="lead">I'm a first year Computer Science student at the University of Dundee. I have been learning Python, Java and HTML/CSS but that one is obvious!</p> <a href="#" class="btn btn-secondary">Read More</a>
-    </about-preview> 
+        <p class="lead">I'm a first year Computer Science student at the University of Dundee. I have been learning
+            Python, Java and HTML/CSS but that one is obvious!</p> <a href="#" class="btn btn-secondary">Read More</a>
+    </about-preview>
     <portfolio-preview class="container text-center my-5">
-        <h2>My Work</h2>
-        <p class="lead">Check out some of my recent projects.</p> <a href="#" class="btn btn-secondary">View
-            Portfolio</a>
+        <h2>Featured Project</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go to project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go to project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </portfolio-preview>
 
 </body>
