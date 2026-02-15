@@ -1,0 +1,14 @@
+/* Themes */
+:root{
+    --bg : #0b0b14;
+    --surface: #121225;
+    --border: rgba(255, 255, 255, 0.12);
+
+    --text: #f3f4ff;
+    --muted: #b8b8d6;
+
+    --purple: #6d28ff;
+    --green: #3ddc97;
+
+    --radius: 16px;
+}
