@@ -46,7 +46,7 @@ a:hover {color: var(--green);}
 .nav-link.active{
     color: var(--text) !important;
     background: rgba(109, 40, 255, 0.18);
-    border: 1px solid rgba(61, 220, 151, 0.35);
+    border: 1px solid rgba(109, 40, 255, 0.35);
 }
 
 .nav-link:hover {
@@ -72,12 +72,19 @@ h1, h2{
 /* Buttons */
 .btn-primary{
     background: var(--purple);
-    background-color: var(--purple);
 }
 
 .btn-primary:hover{
     background: #5b1ff0;
-    background-color: #5b1ff0;
+}
+
+.btn-secondary{
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.18);
+}
+
+.btn-secondary:hover{
+    background: rgba(255,255,255,0.12);
 }
 
 .btn-outline-secondary{
@@ -91,6 +98,12 @@ h1, h2{
     border: 1px solid var(--border);
     border-radius: var(--radius);
     overflow: hidden;
+    transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.card:hover{
+    transform: translateY(-4px);
+    border-color: rgba(109, 40, 255, 0.35);
 }
 
 .card-title{
