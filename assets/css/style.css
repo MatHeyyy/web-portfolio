@@ -67,3 +67,19 @@ h1, h2{
 .lead{
     color: var(--muted);
 }
+
+/* Buttons */
+.btn-primary{
+    background: var(--purple);
+    background-color: var(--purple);
+}
+
+.btn-primary:hover{
+    background: #5b1ff0;
+    background-color: #5b1ff0;
+}
+
+.btn-outline-secondary{
+    border-color: rgba(255, 255, 255, 0.25);
+    color: var(--text);
+}
