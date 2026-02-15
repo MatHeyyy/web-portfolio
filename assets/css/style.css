@@ -1,0 +1,150 @@
+/* Themes */
+:root{
+    --bg : #0b0b14;
+    --surface: #121225;
+    --border: rgba(255, 255, 255, 0.12);
+
+    --text: #f3f4ff;
+    --muted: #b8b8d6;
+
+    --purple: #6d28ff;
+    --green: #3ddc97;
+
+    --radius: 16px;
+}
+
+/* Global Styles */
+body {
+    font-family: "Space Grotesk", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: radial-gradient(900px 500px at 10% 0%, rgba(109, 40, 255, 0.25), transparent 60%),
+                radial-gradient(800px 500px at 90% 10%, rgba(61, 220, 151, 0.18), transparent 55%),
+                var(--bg);
+    color: var(--text);
+}
+a {color: rgba(243, 244, 255, 0.85);}
+a:hover {color: var(--green);}
+
+/* Navbar */
+.navbar {
+    background: rgba(18, 18, 37, 0.75) !important;
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    color: var(--muted) !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link{
+    color: var(--muted) !important;
+    border-radius: 999px;
+    padding: 0.45rem 0.8rem !important;
+}
+
+.nav-link.active{
+    color: var(--text) !important;
+    background: rgba(109, 40, 255, 0.18);
+    border: 1px solid rgba(109, 40, 255, 0.35);
+}
+
+.nav-link:hover {
+    color: var(--text) !important;
+    background: rgba(61, 220, 151, 0.10);
+    border: 1px solid rgba(61, 220, 151, 0.25);
+}
+
+/* Sections/Hero */
+.hero{
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    letter-spacing: -0.02em;
+}
+
+h1, h2{
+    font-weight: 700;
+}
+
+.lead{
+    color: var(--muted);
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn-primary{
+    background: var(--purple);
+    border-color: var(--purple);
+}
+
+.btn-primary:hover{
+    background: #5b1ff0;
+    border-color: #5b1ff0;
+}
+
+.btn-secondary{
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.18);
+}
+
+.btn-secondary:hover{
+    background: rgba(255,255,255,0.12);
+}
+
+.btn-outline-secondary{
+    border-color: rgba(255, 255, 255, 0.25);
+    color: var(--text);
+}
+
+/* Cards */
+.card {
+    background: rgba(18, 18, 37, 0.72);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.18s ease, border-color 0.18s ease;
+    box-shadow: 0 14px 40px rgba(61, 220, 151, 0.15);
+}
+
+.card:hover{
+    transform: translateY(-4px);
+    border-color: rgba(109, 40, 255, 0.35);
+}
+
+.card-title{
+    font-weight: 700;
+    color: var(--text);
+}
+
+.card-text{
+    color: var(--muted);
+}
+
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Badges */
+.badge.bg-primary{
+    background: rgba(61, 220, 151, 0.18) !important;
+    color: var(--text) !important;
+    border: 1px solid rgba(61, 220, 151, 0.28);
+}
+
+/* Footer */
+footer small{
+    color: var(--muted);
+}
+
+/* Focus Accessibility */
+:focus-visible{
+    outline: 3px solid rgba(61, 220, 151, 0.45);
+    outline-offset: 2px;
+    border-radius: 8px;
+}
