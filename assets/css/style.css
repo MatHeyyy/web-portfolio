@@ -83,3 +83,31 @@ h1, h2{
     border-color: rgba(255, 255, 255, 0.25);
     color: var(--text);
 }
+
+/* Cards */
+.card {
+    background: rgba(18, 18, 37, 0.72);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.card-title{
+    font-weight: 700;
+}
+
+.card-text{
+    color: var(--muted);
+}
+
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Badges */
+.badge.bg-primary{
+    background: rgba(61, 220, 151, 0.18) !important;
+    color: var(--text) !important;
+    border: 1px solid rgba(61, 220, 151, 0.28);
+}
