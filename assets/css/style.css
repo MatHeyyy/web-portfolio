@@ -12,3 +12,13 @@
 
     --radius: 16px;
 }
+
+/* Global Styles */
+body {
+    background: radial-gradient(900px 500px at 10% 0%, rgba(109, 40, 255, 0.25), transparent 60%),
+                radial-gradient(800px 500px at 90% 10%, rgba(61, 220, 151, 0.18), transparent 55%),
+                var(--bg);
+    color: var(--text);
+}
+a {color: var(--text);}
+a:hover {color: var(--green);}
