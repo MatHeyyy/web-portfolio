@@ -53,3 +53,17 @@ a:hover {color: var(--green);}
     background: rgba(61, 220, 151, 0.10);
     border: 1px solid rgba(61, 220, 151, 0.25);
 }
+
+/* Sections/Hero */
+section.container.text-center.py-5{
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+h1, h2{
+    font-weight: 700;
+}
+
+.lead{
+    color: var(--muted);
+}
